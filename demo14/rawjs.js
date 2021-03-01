@@ -26,10 +26,12 @@ image.style.marginTop = "-5rem";
 const h1 = document.createElement('h1');
 h1.textContent = "Stanislav Idalgo";
 
+// p
+
+const adresas = document.createElement('p');
+adresas.textContent = "T.Kosciuskos 26";
 
 
 
-
-
-sekcija.append(image, h1)
+sekcija.append(image, h1, adresas)
 document.body.append(sekcija);
