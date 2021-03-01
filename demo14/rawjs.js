@@ -13,6 +13,8 @@ sekcija.style.margin = "10rem auto 5rem auto";
 
 // nuotrauka ==========
 const image = document.createElement('img');
+image.src = "https://scontent-arn2-1.xx.fbcdn.net/v/t1.0-9/134989006_5610386142320628_761958712910963655_o.jpg?_nc_cat=101&ccb=3&_nc_sid=09cbfe&_nc_ohc=tYKBZYeyG3YAX8jdhLW&_nc_ht=scontent-arn2-1.xx&oh=cdd4798326daf3ac3ce20d9df0e384a9&oe=606192E6";
+image.alt = "stanislav-img"
 image.style.height = "10rem";
 image.style.width = "10rem";
 image.style.objectFit = "cover";
@@ -20,9 +22,14 @@ image.style.borderRadius = "100%";
 image.style.marginTop = "-5rem";
 
 
-image.src = "https://scontent-arn2-1.xx.fbcdn.net/v/t1.0-9/134989006_5610386142320628_761958712910963655_o.jpg?_nc_cat=101&ccb=3&_nc_sid=09cbfe&_nc_ohc=tYKBZYeyG3YAX8jdhLW&_nc_ht=scontent-arn2-1.xx&oh=cdd4798326daf3ac3ce20d9df0e384a9&oe=606192E6";
+// h1================
+const h1 = document.createElement('h1');
+h1.textContent = "Stanislav Idalgo";
 
 
 
-sekcija.append(image)
+
+
+
+sekcija.append(image, h1)
 document.body.append(sekcija);
