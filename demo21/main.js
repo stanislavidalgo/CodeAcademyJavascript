@@ -40,9 +40,12 @@ import data from "./data.js";
 
 // 6
 
-const str = data.filter(value => value.gender === "Male" && value.price > 100);
+const str = data.filter(value => value.gender === "Male" && value.price > 100).map(value => value.first_name + " " + value.last_name);
 
-console.log(JSON.stringify(str));
+console.log(str);
+
+
+
 
 
 
