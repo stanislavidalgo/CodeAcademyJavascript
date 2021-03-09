@@ -21,10 +21,16 @@ import data from "./data.js";
 // 3
 
 
-const maleL = data.filter(value => value.gender === "Male" && value.size === "L");
-const maleXl = data.filter(value => value.gender === "Male" && value.size === "XL");
-const maleBig = maleL.concat(maleXl);
-console.log(maleBig);
+// const maleL = data.filter(value => value.gender === "Male" && value.size === "L");
+// const maleXl = data.filter(value => value.gender === "Male" && value.size === "XL");
+// const maleBig = maleL.concat(maleXl);
+// console.log(maleBig);
+
+// 4
+
+const ifMale = data.every( value => value.gender === "Male" || value.gender === "Female")
+console.log(ifMale);
+
 
 
 
