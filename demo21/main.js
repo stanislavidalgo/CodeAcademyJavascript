@@ -28,8 +28,22 @@ import data from "./data.js";
 
 // 4
 
-const ifMale = data.every( value => value.gender === "Male" || value.gender === "Female")
-console.log(ifMale);
+// const ifMale = data.every( value => value.gender === "Male" || value.gender === "Female")
+// console.log(ifMale);
+
+// 5
+
+// const ifCost = data.some(value => value.price < 5)
+
+
+// console.log(ifCost);
+
+// 6
+
+const str = data.filter(value => value.gender === "Male" && value.price > 100);
+
+console.log(JSON.stringify(str));
+
 
 
 
