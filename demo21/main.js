@@ -4,19 +4,28 @@ import data from "./data.js";
 
 // console.log(pigiau);
 // 2
-const sizeS = data.filter(value => value.size === "S")
+// const sizeS = data.filter(value => value.size === "S")
 
 
-const sizeM = data.filter(value => value.size === "M")
+// const sizeM = data.filter(value => value.size === "M")
 
 
 
-const sizeL = data.filter(value => value.size === "L")
+// const sizeL = data.filter(value => value.size === "L")
 
 
-const more = sizeS.concat(sizeM, sizeL);
+// const more = sizeS.concat(sizeM, sizeL);
 
-console.log(more);
+// console.log(more);
+
+// 3
+
+
+const maleL = data.filter(value => value.gender === "Male" && value.size === "L");
+const maleXl = data.filter(value => value.gender === "Male" && value.size === "XL");
+const maleBig = maleL.concat(maleXl);
+console.log(maleBig);
+
 
 
 
