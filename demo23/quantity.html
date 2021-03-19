@@ -12,24 +12,24 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
-    <script src="index.js" defer></script>
+    <script src="quantity.js" defer></script>
   </head>
   <body>
     <header>
       <div class="container">
-        <h1>Wine Collection</h1>
-        <p>Login Page</p>
+        <h1>Quantity</h1>
       </div>
     </header>
 
     <main>
       <div class="container">
-        <form name="login">
-          <label for="email"> Email</label>
-          <input type="email" placeholder="email" name="email" />
-          <label for="password">Password</label>
-          <input type="password" placeholder="password" name="password" />
-          <button type="submit">Login</button>
+        <a href="view.html" class="hrefBtn">View Wines</a>
+
+        <form name="add">
+          <select name="name"></select>
+          <input type="number" name="quantity" placeholder="quantity" />
+
+          <br /><button type="submit" class="addBtn">Add</button>
         </form>
       </div>
     </main>
